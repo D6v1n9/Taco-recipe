@@ -20,8 +20,11 @@ app.get("/", (req, res) => {
 app.post("/recipe", (req, res) => {
   const recipeName = req.body["choice"];
   const obj = [];
+
+  //Switch case will be better to use(how?)
+  
   if (recipeName === 'chicken') {
-    obj.push(recipeObj[0]);
+    obj.push(recipeObj[0]);                          
   }
   if (recipeName === 'beef') {
     obj.push(recipeObj[1]);
